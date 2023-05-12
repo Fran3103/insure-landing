@@ -1,0 +1,25 @@
+@import '../estilos/variables.css';
+
+.button{
+    padding: 15px 90px;
+    background-color: transparent;
+    
+    font-weight: 400;
+    border: 1px solid white;
+    cursor: pointer;
+    font-family: var(--Body);
+    color: var(--VeryLightGray);
+}
+.button:hover{
+    background-color: var(--VeryLightGray);
+    color: var(--DarkViolet);
+}
+
+@media screen and (min-width:760px) {
+
+    .button{
+        padding: 15px 50px;
+
+
+    }
+}

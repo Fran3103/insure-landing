@@ -1,0 +1,165 @@
+@import '../estilos/variables.css';
+
+*{
+    font-family: var(--Body);
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.titulo{
+    font-size: 2.7em;
+    color:var(--VeryDarkViolet);
+    font-family: var(--Heading);
+}
+
+.imgDesktop{
+    display: none;
+    position: none;
+    width: 300px;
+    height: 400px;
+    top: 70px;
+    right: 50px;
+}
+
+
+.bgLeftDesktop{
+    display: none;
+    position:absolute;
+    left: -20px;
+    top: 340px;
+}
+.linea{
+    width: 30%;
+    height: 1px;
+    background-color: black;
+    margin-top: 100px;
+}
+
+.containerSecciones{
+    display: flex;
+    flex-direction: column;
+}
+.secciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.parrafo{
+    text-align: center;
+    padding: 12px 23px;
+    line-height: 1.5;
+    font-family: var(--Body);
+    font-weight: 700;
+    color: var(--DarkGrayishViolet);
+}
+
+.tituloSeccion{
+    margin-bottom: -10px;
+    margin-top: 20px;
+    font-family: var(--Heading);
+    color:var(--VeryDarkViolet);
+}
+
+.iconoSeccion{
+    width: 70px;
+    padding-bottom: 20px;
+}
+
+
+@media screen and (min-width:760px) {
+
+    .imgDesktop{
+        display: flex;
+        position: absolute;
+        width: 40%;
+        height: 60%;
+        min-width: 300px;
+        max-width: 600px;
+        top: 170px;
+        right: 40px;
+        z-index: 0;
+    }
+
+    .bgLeftDesktop{
+        display: flex;
+        position:absolute;
+        left: -20px;
+        top: 380px;
+        width: 15%;
+    }
+
+    .container{
+        align-items: flex-start;
+        width: 90%;
+        margin: 10px auto;
+        margin-top: 100px;
+    }
+
+
+
+    .containerSecciones{
+        flex-direction: row;
+    }
+    
+    .secciones{
+        align-items: start;
+        
+    }
+
+    .iconoSeccion{
+        width: 50px;
+        padding-bottom: 5px;
+    }
+
+    .parrafo{
+        text-align: left;
+        padding: 0;
+        font-size: 0.8em;
+        margin-top:30px;
+    }
+    .tituloSeccion{
+        text-align: left;
+    }
+}
+
+@media screen and (min-width:1100px) {
+
+    .container{
+        width: 90%;
+        max-width: 1150px;
+        margin-top: 140px;
+        margin-bottom: 60px;
+    }
+
+
+    .imgDesktop{
+        right: 8%;
+        height: 70%;
+        width: 40%;
+        max-width: none;
+        top: 30%;
+    }
+
+    .titulo{
+        font-size: 3rem;
+    }
+
+    .tituloSeccion{
+        font-size: 1.4rem;
+    }
+
+    .parrafo{
+        font-size: 1rem;
+    }
+    
+}

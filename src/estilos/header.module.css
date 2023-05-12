@@ -1,0 +1,169 @@
+@import '../estilos/variables.css';
+
+
+.contenedorGeneral{
+    
+    position: relative;
+    background-color: var(--DarkViolet);
+    overflow: hidden;
+}
+
+.headerContainer{
+    width: 100%;
+}
+
+.headerTextos{
+    align-items: center;
+    color: white;
+    padding: 40px 20px 40px 20px;
+    position: relative;
+    overflow:visible;
+
+}
+
+.titulo{
+    z-index: 10;
+    position: relative;
+    font-family: var(--Heading);
+    color: var(--VeryLightGray);
+
+}
+
+.parrafo{
+    padding-bottom: 30px;
+    line-height: 1.5;
+    font-family: var(--Body);
+    color: var(--VeryLightGray);
+}
+
+
+.bgLeftMobile{
+    position:absolute;
+    left: 0;
+    top: -20px;
+    width: 170px;
+    z-index: 0;
+}
+.bgRightDesktop{
+    display: none;
+}
+.bgLeftDesktop{
+    display: none;
+
+}
+.imgDesktop{
+    display: none;
+}
+.imgHeader{
+    width: 100%;
+    margin-top: -2px;
+}
+
+.bgRightMobile{
+    position:absolute;
+    right: 10px;
+    bottom: -130px;
+    width: 100px;
+}
+
+.button{
+    margin-bottom: 30px;
+}
+
+
+
+@media screen and (min-width:600px) {
+    .imgHeader{
+        display: none;
+    }
+    .imgDesktop{
+        display: flex;
+        width: 100vw;
+        margin-top: -3px
+    };
+}
+
+@media screen and (min-width:760px) {
+    .contenedorGeneral{
+        width: 100vw;
+        
+    }
+    .headerContainer{
+        position: relative;
+        height: 400px;
+        overflow: hidden;
+        width: 97%;
+        margin: 0 auto;
+
+    }
+
+    .imgDesktop{
+        position: absolute;
+        width: 70%;
+        display: none;
+        top: 70px;
+        right: 0;
+    }
+
+
+    .headerTextos{
+        text-align: left;
+        width: 50%;
+        margin: 0 20px;
+        
+    }
+
+    .titulo{
+        font-size: 2.8em;
+        margin-right: 70px;
+        line-height: 0.8;
+    }
+    
+    .parrafo{
+        font-size: 0.8em;
+        margin-right: 30px;
+
+    }
+
+    .bgLeftMobile{
+        display: none;
+    }
+    .bgLeftDesktop{
+        display: flex;
+        position:absolute;
+        left: -20px;
+        top: 340px;
+    }
+
+    .bgRightMobile{
+        display: none;
+    }
+    .bgRightDesktop{
+        display: flex;
+        position: absolute;
+        top: -50px;
+        right:0;
+        width: 250px;
+        z-index: 10;
+    }
+
+}
+
+
+@media screen and (min-width:1100px) {
+
+    .headerContainer{
+        width: 90%;
+        max-width: 1200px;
+        height: 450px;
+    }
+
+    .titulo{
+        font-size: 3.5rem;
+    }
+    
+    .parrafo{
+        font-size: 1.1rem;
+        margin-right: 60px;
+    }
+}

@@ -1,0 +1,95 @@
+@import '../estilos/variables.css';
+
+
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    background-color: var(--DarkViolet);
+    position: relative;
+    overflow: hidden;
+}
+
+.fondo{
+    position:absolute;
+    top: 0;
+    right: 0;
+    
+}
+
+
+.titulo{
+    padding: 30px  20px 20px 20px;
+    font-size: 2em;
+    position: relative;
+    z-index: 10;
+    color:var(--VeryLightGray);
+    font-weight: 500;
+    line-height: 1;
+    font-family: var(--Heading);
+
+}
+
+
+.boton{
+    padding: 10px 20px ;
+    background-color: transparent;
+    border: 1px solid  var(--VeryLightGray);
+    margin-top: -10px;
+    margin-bottom: 50px;
+    color: var(--VeryLightGray);
+    cursor: pointer;
+    font-family: var(--Body);
+}
+
+.boton:hover{
+    background-color: var(--VeryLightGray);
+    color: var(--DarkViolet);
+}
+
+
+@media screen and (min-width:760px) {
+
+    .container{
+        flex-direction: row;
+        margin: 20px auto;
+        padding: 10px 40px;
+        justify-content: space-between;
+    }
+    
+    .titulo{
+        width: 50%;
+        padding:0 ;
+        font-size: 2.4em;
+        text-align: left;
+    }
+
+
+    .boton{
+        margin: 0;
+        z-index: 10;
+    }
+}
+
+@media screen and (min-width:1100px) {
+
+    .container{
+        width: 90%;
+        max-width: 1100px;
+    }
+
+    .titulo{
+        font-size: 3rem;
+        width:38%;
+        margin-right: 430px;
+    }
+
+    .boton{
+        margin: 0 40px;
+        margin-right: 50px;
+    }
+    
+}

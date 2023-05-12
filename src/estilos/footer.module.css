@@ -1,0 +1,139 @@
+@import '../estilos/variables.css';
+
+*{
+    font-family: var(--Body);
+}
+
+.containerFooter{
+    width: 100%;
+    position: relative;
+    margin-top: 120px;
+    margin-bottom: 70px;
+    background-color: var(--VeryLightGray);
+}
+
+.bgFooterMobile{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.link{
+    cursor: pointer;
+}
+
+.logosContainer{
+    z-index: 10;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 40px ;
+}
+
+.redes{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.tw, .face, .insta, .pinteres{
+    cursor: pointer;
+}
+
+.linea{
+    width: 90%;
+    height: 1px;
+    background-color: var(--DarkViolet);
+    margin: 40px auto;
+}
+
+.containerListas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100vw;
+    color: var(--VeryDarkViolet);
+    text-transform: uppercase;
+}
+.companyContainer, .helpContainer, .contactContainer, .othersContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    color: var(--DarkGrayishViolet);
+    font-family: var(--Body);
+}
+.listaCompany, .listaHelp, .listaContact, .listaOthers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+    padding: 0;
+    
+}
+
+
+@media screen and (min-width:760px) {
+
+    .logosContainer{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 86%;
+        margin: 10px auto;
+    }
+
+    .containerListas{
+        width: 86%;
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: flex-start;
+        justify-content: space-between;
+        
+    }
+
+    .linea{
+        width: 86%;
+        z-index: 10;
+        position: relative;
+    }
+    h3{
+        font-size: 0.9em;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .companyContainer, .helpContainer, .contactContainer, .othersContainer{
+        display: block;
+        margin-bottom: 40px;
+    }
+
+
+    .listaCompany, .listaHelp, .listaContact, .listaOthers{
+        align-items: flex-start;
+    }
+}
+
+
+@media screen and (min-width:1100px) {
+
+    .logosContainer{
+        width: 90%;
+        max-width: 1150px;
+    }
+    .containerListas{
+        width: 90%;
+        max-width: 1150px;
+    }
+}
