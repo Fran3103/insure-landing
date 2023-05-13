@@ -30,10 +30,10 @@ function Navegacion() {
         {navOpen && 
         <ul className={style.navLista}>
         {links.map((x) => (
-          <div key={x.id}>
-            <i className={style.link}> { x.link === "HOWWEWORK" ? "HOW WE WORK" : x.link } </i>
+          
+            <i key={x.id} className={style.link}> { x.link === "HOWWEWORK" ? "HOW WE WORK" : x.link } </i>
             
-          </div>
+          
           ))}
           <Boton/>
           <img src={bgMenu} alt='bg menu' className={style.bgMenu} />
@@ -43,10 +43,10 @@ function Navegacion() {
       <div className={style.menuDesktop} >
       <ul className={style.navListaDesktop}>
         {links.map((x) => (
-          <div key={x.id}>
-            <i className={style.link}> { x.link === "HOWWEWORK" ? "HOW WE WORK" : x.link } </i>
+          
+            <i key={x.id} className={style.link}> { x.link === "HOWWEWORK" ? "HOW WE WORK" : x.link } </i>
             
-          </div>
+          
           ))}
           <BotonDesktop/>
          
