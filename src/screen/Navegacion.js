@@ -30,8 +30,8 @@ function Navegacion() {
         {navOpen && 
         <ul className={style.navLista}>
         {links.map((x) => (
-          <div>
-            <links className={style.link}> { x.link === "HOWWEWORK" ? "HOW WE WORK" : x.link } </links>
+          <div key={x.id}>
+            <i className={style.link}> { x.link === "HOWWEWORK" ? "HOW WE WORK" : x.link } </i>
             
           </div>
           ))}
@@ -43,8 +43,8 @@ function Navegacion() {
       <div className={style.menuDesktop} >
       <ul className={style.navListaDesktop}>
         {links.map((x) => (
-          <div>
-            <links className={style.link}> { x.link === "HOWWEWORK" ? "HOW WE WORK" : x.link } </links>
+          <div key={x.id}>
+            <i className={style.link}> { x.link === "HOWWEWORK" ? "HOW WE WORK" : x.link } </i>
             
           </div>
           ))}

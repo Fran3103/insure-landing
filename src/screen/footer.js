@@ -7,7 +7,6 @@ import tw from '../img/icon-twitter.png';
 import pinteres from '../img/icon-pinterest.png';
 import bgFooterMobile from '../img/bg-pattern-footer-mobile.png';
 
-
 const linksCompany = [
     {
         id: '1',
@@ -91,10 +90,10 @@ function Footter (){
             <div className={style.logosContainer}>
                 <img className="logo" src={logoFooter} alt="logo"/>
                 <div className={style.redes} >
-                    <img className={style.face} src={face}/>
-                    <img className={style.tw} src={tw}/>
-                    <img className={style.pinteres} src={pinteres}/>
-                    <img className={style.insta} src={insta}/>
+                    <img src={face}/>
+                    <img src={tw}/>
+                    <img src={pinteres}/>
+                    <img src={insta}/>
                 </div>
             </div>
 
@@ -110,11 +109,11 @@ function Footter (){
                                     <ul className={style.listaCompany}>
                                         {
                                             linksCompany.map((x) => (
-                                                <linksHelp className={style.link}>
+                                                <i  key={x.id}>
                                                     {
                                                         x.link
                                                     }
-                                                </linksHelp>
+                                                </i>
                                             ))
                                         }
 
@@ -128,11 +127,11 @@ function Footter (){
                         <ul className={style.listaHelp}>
                             {
                                 linksHelp.map((x) => (
-                                    <linksHelp className={style.link}>
+                                    <i key={x.id}>
                                         {
                                             x.link
                                         }
-                                    </linksHelp>
+                                    </i>
                                 ))
                             }
 
@@ -146,11 +145,11 @@ function Footter (){
                         <ul className={style.listaContact}>
                             {
                                 linksContact.map((x) => (
-                                    <linksHelp className={style.link}>
+                                    <i key={x.id}>
                                         {
                                             x.link
                                         }
-                                    </linksHelp>
+                                    </i>
                                 ))
                             }
 
@@ -164,11 +163,11 @@ function Footter (){
                         <ul className={style.listaOthers}>
                             {
                                 linksOthers.map((x) => (
-                                    <linksHelp className={style.link}>
+                                    <i key={x.id}>
                                         {
                                             x.link
                                         }
-                                    </linksHelp>
+                                    </i>
                                 ))
                             }
 
