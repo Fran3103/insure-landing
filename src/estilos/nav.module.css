@@ -41,6 +41,7 @@
 
 .link{
     cursor: pointer;
+    list-style: none;
 }
 
 .logo{

@@ -31,7 +31,7 @@ function Navegacion() {
         <ul className={style.navLista}>
         {links.map((x) => (
           
-            <i key={x.id} className={style.link}> { x.link === "HOWWEWORK" ? "HOW WE WORK" : x.link } </i>
+            <li key={x.id} className={style.link}> { x.link === "HOWWEWORK" ? "HOW WE WORK" : x.link } </li>
             
           
           ))}
@@ -44,7 +44,7 @@ function Navegacion() {
       <ul className={style.navListaDesktop}>
         {links.map((x) => (
           
-            <i key={x.id} className={style.link}> { x.link === "HOWWEWORK" ? "HOW WE WORK" : x.link } </i>
+            <li key={x.id} className={style.link}> { x.link === "HOWWEWORK" ? "HOW WE WORK" : x.link } </li>
             
           
           ))}
