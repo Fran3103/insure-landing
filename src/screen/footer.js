@@ -90,10 +90,10 @@ function Footter (){
             <div className={style.logosContainer}>
                 <img className="logo" src={logoFooter} alt="logo"/>
                 <div className={style.redes} >
-                    <img src={face}/>
-                    <img src={tw}/>
-                    <img src={pinteres}/>
-                    <img src={insta}/>
+                    <img src={face}  alt="facebook"/>
+                    <img src={tw} alt="twitter"/>
+                    <img src={pinteres} alt="pinteres"/>
+                    <img src={insta} alt="instagram"/>
                 </div>
             </div>
 
