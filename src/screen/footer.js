@@ -109,11 +109,11 @@ function Footter (){
                                     <ul className={style.listaCompany}>
                                         {
                                             linksCompany.map((x) => (
-                                                <i  key={x.id} className={style.link}>
+                                                <li  key={x.id} className={style.link}>
                                                     {
                                                         x.link
                                                     }
-                                                </i>
+                                                </li>
                                             ))
                                         }
 
@@ -127,11 +127,11 @@ function Footter (){
                         <ul className={style.listaHelp}>
                             {
                                 linksHelp.map((x) => (
-                                    <i key={x.id} className={style.link}>
+                                    <li key={x.id} className={style.link}>
                                         {
                                             x.link
                                         }
-                                    </i>
+                                    </li>
                                 ))
                             }
 
@@ -145,11 +145,11 @@ function Footter (){
                         <ul className={style.listaContact}>
                             {
                                 linksContact.map((x) => (
-                                    <i key={x.id} className={style.link}>
+                                    <li key={x.id} className={style.link}>
                                         {
                                             x.link
                                         }
-                                    </i>
+                                    </li>
                                 ))
                             }
 
@@ -163,11 +163,11 @@ function Footter (){
                         <ul className={style.listaOthers}>
                             {
                                 linksOthers.map((x) => (
-                                    <i key={x.id} className={style.link}>
+                                    <li key={x.id} className={style.link}>
                                         {
                                             x.link
                                         }
-                                    </i>
+                                    </li>
                                 ))
                             }
 
